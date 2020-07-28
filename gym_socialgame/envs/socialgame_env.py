@@ -365,3 +365,13 @@ class SocialGameEnv(gym.Env):
 
         #Checking that yesterday_in_state is valid
         assert isinstance(yesterday_in_state, bool), "Variable one_day is not of type Boolean. Instead got type {}".format(type(yesterday_in_state))
+
+        print("-"*30)
+        response_types = {"l":"Linear", "t":"Threshold Exponential", "s":"Sinusoidal"}
+        print("Action Space: {}".format(action_space_string.capitalize()))
+        print("Player Response Type: {}".format(response_types[response_type_string]))
+        print("Number of Players: {}".format(number_of_participants))
+        print("Fixed Price Signal: {}".format(one_day))
+        print("Energy in State: {}".format(energy_in_state))
+        print("Yesterday in State: {}".format(yesterday_in_state))
+        print("-"*30)
