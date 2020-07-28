@@ -3,9 +3,9 @@ from gym import spaces
 
 import numpy as np
 
-from utils import price_signal
-from agents import *
-from reward import Reward
+from gym_socialgame.envs.utils import price_signal
+from gym_socialgame.envs.agents import *
+from gym_socialgame.envs.reward import Reward
 
 class SocialGameEnv(gym.Env):
     metadata = {'render.modes': ['human']}
