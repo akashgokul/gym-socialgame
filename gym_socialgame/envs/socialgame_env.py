@@ -1,12 +1,11 @@
 import gym
 from gym import spaces
-from gym.utils import seeding
 
 import numpy as np
 
-from .utils import price_signal
-from .agents import *
-from .reward import Reward
+from utils import price_signal
+from agents import *
+from reward import Reward
 
 class SocialGameEnv(gym.Env):
     metadata = {'render.modes': ['human']}
